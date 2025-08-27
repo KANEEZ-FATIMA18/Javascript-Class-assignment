@@ -1,0 +1,77 @@
+/* 📱 Small Screens (Mobiles) */
+@media (max-width: 576px) {
+  .container {
+    min-width: 90%;
+    /* min-height: auto; */
+height: 400px;
+    margin: 0px 20px;
+    padding: 10px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+
+  .players {
+    /* flex-direction: column; */
+    gap: 15px;
+    width: 100%;
+  }
+
+  .player1,
+  .player2 {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px ;
+  }
+
+  .play-score1,
+  .play-score2 {
+    /* width: 140px;
+    height: 130px; */
+    width: 100%;
+    height: auto;
+
+    padding: 10px 15px;
+  }
+
+  #score1, #score2 {
+    font-size: 20px;
+  }
+
+  .roll {
+    width: 150px;
+    padding: 10px 15px;
+    font-size: 14px;
+    /* left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%); */
+  }
+
+  .dice-container svg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    min-width: 60%;
+    /* padding: 25px; */
+  }
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+ 
+
+  .dice-container svg {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+
