@@ -10,8 +10,28 @@
 </head>
 
 <body>
+  <!-- main page  -->
   <section class="main">
-    <div class="container">
+
+    <!-- feature-page code -->
+    <div class="container feature-container" id="feature-page">
+      <h1 class="f-h1">🎲 Welcome to the Dice Roll Game!</h1>
+      <p>✨ Game Features & Rules:</p>
+
+
+      <ul>
+        <li> Two players can enter their names before starting</li>
+        <li> Players take turns rolling the dice (Player 1 → Player 2)</li>
+        <li> If a player rolls <strong>1</strong>, they score 1 point and turn passes</li>
+        <li> If a player rolls <strong>6</strong>, they get an extra turn</li>
+        <li> The first player to reach <strong>20 or more points</strong> wins the game</li>
+        <li>You can restart and play again anytime</li>
+      </ul>
+
+      <div class="m-roll"> <button id="start-game" class="roll-play">Let's Play</button></div>
+    </div>
+    <!-- game page code -->
+    <div id="game-page" class="container game-container " style="display: none;">
       <h1>Dice Roll Game</h1>
       <div class="dice-container">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="120" height="120" fill="currentColor">
@@ -32,9 +52,11 @@
           <button class="player2">player2</button>
         </div>
       </div>
-     <div class="m-roll"> <button class="roll">Roll Dice</button></div>
-
+      <!-- result -->
+       <h3></h3>
+      <div class="m-roll"> <button class="roll">Roll Dice</button></div>
     </div>
+
   </section>
   <script src="script.js"></script>
 
