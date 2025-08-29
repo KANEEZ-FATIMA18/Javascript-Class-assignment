@@ -83,11 +83,11 @@ rollbtn.addEventListener("click", function () {
   
     //result
     if (score1 >= 20) {
-        document.querySelector("h3").innerHTML = "Winner: 🎉 Congratulations " + name1 + "! You’re the Champion! 🏆";
+        document.querySelector("h3").innerHTML = "🎉Congratulations " + name1 + "! You’re the Champion!";
         resetGame();
     }
     else if (score2 >= 20) {
-        document.querySelector("h3").innerHTML = "Winner: 🎉 Congratulations " + name2 + "! You’re the Champion! 🏆";
+        document.querySelector("h3").innerHTML = "🎉Congratulations " + name2 + "! You’re the Champion!";
         resetGame();
 
     }
