@@ -98,7 +98,14 @@ html {
     transition: background 0.3s ease;
     
 }
-
+.player1:hover {
+    background-color: rgb(255, 140, 0);
+    color: white;
+}
+.player2:hover {
+    background-color: rgb(116, 32, 116);
+    color: white;
+}
 
 .player2 {
     background-color: rgb(61, 20, 61);
