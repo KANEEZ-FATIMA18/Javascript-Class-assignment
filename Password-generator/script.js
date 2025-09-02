@@ -1,6 +1,3 @@
-
-
-
 // Password generation logic
 var copy = document.getElementById("copyBtn");
 
@@ -10,7 +7,7 @@ var numbers = "0123456789";
 var symbols = "!@#$%^&*";
 var allChars = upperCase + lowerCase + numbers + symbols;
 
-
+//password generate button & input
 var generate = document.getElementById("Password");
 var regenerate = document.getElementsByClassName("Regenerate-Password");
 
@@ -18,11 +15,13 @@ var regenerate = document.getElementsByClassName("Regenerate-Password");
 var lenVal = document.getElementById("lengthValue");
 var len = document.getElementById("length");
 
-
+//length function
 len.oninput = function () {
   lenVal.textContent = this.value;
 }
 
+
+//Generate password function
 function generatePassword() {
   var allChars = "";
   if (document.getElementById("includeUppercase").checked) {
@@ -39,12 +38,12 @@ function generatePassword() {
   }
 
   password = "";
+
   for (var i = 0; i < len.value; i++) {
     var randomNumber = Math.floor(Math.random() * allChars.length);
     password += allChars[randomNumber]
     generate.innerHTML = password;
   }
-
 
   return password;
 
@@ -52,16 +51,12 @@ function generatePassword() {
 
 
 function copyPassword() {
-  // password box ko pakadna
   var passwordBox = document.getElementById("Password");
-
-  // password ki value lena
   var password = passwordBox.textContent;
 
   navigator.clipboard.writeText(password);
 
   if (password) {
-    // message dikhana
     alert("Password copied!");
   }
   else {
