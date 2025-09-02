@@ -1,0 +1,158 @@
+.main {
+    /* background-color: #0b0f1454; */
+    background-color: aqua;
+    background: hsla(173, 89%, 70%, 1);
+
+    background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6FF7E8", endColorstr="#1F7EA1", GradientType=1);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #0f1a30;
+    color: white;
+    min-height: 500px;
+    height: auto;
+    max-width: 700px;
+    width: 98%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 20px #010305ec;
+animation: fadeInUp 3s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+    
+
+.container h1 {
+    background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;  
+  background-clip: text;  
+  color: transparent;  
+    text-align: center;
+    padding: 15px 0px;
+    margin: 20px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    /* text-shadow: 3px 3px 6px #073179ec; */
+}
+
+.pass-main {
+    background-color: rgba(14, 68, 126, 0.737);
+    border: 2px solid aqua;
+    color: white;
+    max-width: 500px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    padding-top: 10px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px;
+
+}
+
+.pass-main p {
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 300px;
+    width: 98%;
+
+    overflow-wrap: break-word;
+}
+
+#length {
+    background-color: #e6f1ff;
+    width: 250px;
+    margin: 10px 0;
+    accent-color: aqua;
+    /* slider ka color */
+}
+
+#lengthValue {
+    font-weight: bold;
+    margin-left: 10px;
+    color: aquamarine;
+    display: inline;
+}
+
+.check-main {
+    margin-top: 20px;
+    margin: 0px 2rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 6px #28b59bb3);
+      accent-color: aqua;
+      transition: all 0.3s ease;
+
+}
+
+/* Buttons */
+.button {
+    /* background-color: rgb(21, 224, 173); */
+    margin: 30px 0px;
+    width: 90%;
+}
+
+#copyBtn {
+    color: white;
+background: hsla(173, 89%, 70%, 1);
+
+background: linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(173, 89%, 70%, 1) 0%, hsla(196, 68%, 38%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6FF7E8", endColorstr="#1F7EA1", GradientType=1 );
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 12px 16px;
+    border-radius: 12px;
+    transition: .2s transform, .2s box-shadow, .2s opacity;
+ 
+}
+
+#copyBtn:active {
+    transform: translateY(1px) scale(.99);
+    box-shadow: 0 0 10px #28b59bb3;
+}

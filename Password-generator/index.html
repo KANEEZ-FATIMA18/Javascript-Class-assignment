@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main container-fluid ">
+        <div class="container">
+            <h1>Password Generator</h1>
+            <div class="pass-main">
+                <p id="Password" readonly></p>
+                <i
+                    class=" Regenerate-Password fa-solid fa-rotate-right" title="Regenerate Password" onclick="generatePassword()"  style="color: white; font-size: 1.2rem;padding-bottom: 10px;cursor: pointer;"></i></div>
+
+      <!-- Password length slider -->
+<label for="length">Password Length:</label>
+<input type="range" id="length" min="4" max="20" value="12"><span id="lengthValue">12</span>
+
+            <!-- check  -->
+            <div class="check-main row g-3 ">
+                <!-- check child  -->
+              
+                <div class="col-md-6 col-12 check ">
+                    
+                    <input type="checkbox" id="includeUppercase" checked>
+                    <label for="includeUppercase">Uppercase Letters</label>
+                </div>
+                <div class="col-md-6 col-12 check">
+                    <input type="checkbox" id="includeLowercase" checked>
+                    <label for="includeLowercase">Lowercase Letters</label>
+                </div>
+                <div class="col-md-6 col-12 check ">
+                    <input type="checkbox" id="includeNumbers" checked>
+                    <label for="includeNumbers">Numbers</label>
+                </div>
+                <div class="col-md-6 col-12 check ">
+                    <input type="checkbox" id="includeSymbols" checked>
+                    <label for="includeSymbols">Symbols</label>
+
+                </div>
+                </div>
+                <!-- btn -->
+                <div class="col-12 text-center button"> <button id="copyBtn" onclick="copyPassword()">Copy Password <i
+                            class="fa-regular fa-copy" title="Copy to clipboard" style="color: white; font-size: 1.2rem;padding-left: 10px;"></i></button></div>
+            </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

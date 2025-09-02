@@ -1,0 +1,27 @@
+@media (min-width: 200px) and (max-width: 500px) {
+
+    .pass-main {
+    width: 100%;
+    font-size: 18px;
+    height: 45px;
+    padding: 0px 10px;
+  }
+  .pass-main p {
+    font-size: 16px;
+    width: 95%;
+  }
+  #length {
+    width: 200px;
+  }
+   .check-main {
+    width: 98%;
+  }
+
+  #copyBtn {
+    font-size: 15px;
+    height: 45px;
+  }
+    
+}
+
+
