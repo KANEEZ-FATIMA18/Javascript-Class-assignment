@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    .inputs-main {
+        /* flex-direction: column; */
+        align-items: stretch;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .input-child {
+        margin-bottom: 20px;
+    }
+
+    .input-child input {
+        width: 100%;
+    }
+    .heading, h1 {
+        font-size: 1.6rem;
+    }
+    #in{
+        width: 80px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    .main{
+        padding-top: 50px;
+    }
+}
