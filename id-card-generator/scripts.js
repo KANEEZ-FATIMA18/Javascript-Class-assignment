@@ -1,6 +1,6 @@
 var inputs = document.querySelectorAll("#input-name, #input-father, #input-dob, #input-cnic, #input-photo");
 
-//individual select inputs index.html
+//individual select inputs
 var inputName = document.getElementById("input-name");
 var inputFather = document.getElementById("input-father");
 var inputDob = document.getElementById("input-dob");
@@ -42,14 +42,14 @@ function generateID() {
 
     }
 
-    // CNIC ka separate check
+    // CNIC check
     if (inputCnic.value.trim().length !== 13) {
         inputCnic.style.border = "2px solid red";
         filled = false;
         alert("CNIC must be in 13 digits")
     }
 
-    // phone ka separate check
+    // phone check
     if (inputPhone.value.trim().length !== 11) {
         inputCnic.style.border = "2px solid red";
         filled = false;
