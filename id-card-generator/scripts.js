@@ -39,15 +39,28 @@ function generateID() {
         else {
             inputs[i].style.border = "1px solid #3bcc34ff";
         }
+
     }
+
+    // CNIC ka separate check
+    if (inputCnic.value.trim().length !== 13) {
+        inputCnic.style.border = "2px solid red";
+        filled = false;
+        alert("CNIC must be in 13 digits")
+    }
+
+    // phone ka separate check
+    if (inputPhone.value.trim().length !== 11) {
+        inputCnic.style.border = "2px solid red";
+        filled = false;
+        alert("Phone Number must be in 11 digits")
+    }
+
     if (filled) {
         formSection.style.display = "none";
         idSection.style.display = "block";
         nameId.innerText = inputName.value.toUpperCase();
-
-        fatherId.innerText = inputFather.value;
-
-
+        fatherId.innerText = inputFather.value.charAt(0).toUpperCase() + inputFather.value.slice(1);
         dobId.innerText = inputDob.value;
         cnicId.innerText = inputCnic.value;
         phoneId.innerText = inputPhone.value;

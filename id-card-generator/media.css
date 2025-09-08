@@ -29,7 +29,8 @@
 
 @media (max-width: 400px) {
     .child {
-        width: 90%;
+        width: 94%;
+        
     }
     .input-child {
         width: 90%;
@@ -45,4 +46,13 @@
         width: 85%;
         font-size: 1rem;
     }
+    #email{
+       overflow-wrap: unset;
+    }
+   span{
+    font-size: 0.9rem;
+   }
+   #father ,#dob,#cnic, #phone,#qualification,#emai{
+    font-size: 1rem;
+   }
 }
