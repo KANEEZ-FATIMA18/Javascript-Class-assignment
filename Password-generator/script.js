@@ -36,7 +36,11 @@ function generatePassword() {
   if (document.getElementById("includeSymbols").checked) {
     allChars += symbols;
   }
-
+  if (allChars === "") {
+    alert("Please select at least one character type!");
+    generate.innerHTML = "";
+    return "";
+  }
   password = "";
 
   for (var i = 0; i < len.value; i++) {
