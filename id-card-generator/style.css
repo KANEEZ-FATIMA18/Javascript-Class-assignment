@@ -1,10 +1,12 @@
 .main {
     width: 100%;
-    background: hsla(176, 61%, 87%, 1);
+     background: hsla(176, 61%, 87%, 1);
     background: linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CAF2EF", endColorstr="#C9EFDC", GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CAF2EF", endColorstr="#C9EFDC", GradientType=1); 
+
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,19 +106,7 @@ button:focus {
 
 /* id page css */
 
-#id-main {
-    width: 100%;
-    background: hsla(176, 61%, 87%, 1);
-    background: linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(176, 61%, 87%, 1) 0%, hsla(150, 54%, 86%, 1) 50%, hsla(301, 68%, 84%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CAF2EF", endColorstr="#C9EFDC", GradientType=1);
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    height: auto;
-    
-}
+
 
 
 h1 {
