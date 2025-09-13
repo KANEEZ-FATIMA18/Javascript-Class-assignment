@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb OnOff Mood</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <section class="dark-main">
+        <h1>Switch the Bulb Mood</h1>
+        <!-- dark mood  -->
+        <div class="dark-mood ">
+            <img src="images/image1.png" alt="bulb" id="image1" onmouseover="change()" onmouseout="reset()">
+            <h2 id="dark-text">💤 Light is OFF</h2>
+            <h4 id="dark-end">😴 Sleeping mode activated</h4>
+            <button id="dark-btn" onclick="btn()">Turn ON</button>
+        </div>
+    </section>
+
+    <!-- light mood -->
+    <section class=" light-main">
+         <h1 style="color:#ffd54f;">Switch the Bulb Mood</h1>
+        <div class="light-mood">
+            <img src="images/image2.png" alt="bulb" id="image2" style="filter: drop-shadow(2px 2px 5px #ffd54f)">
+            <h2 id="light-text">🌟 Light is ON</h2>
+            <h4 id="light-end">✨ The room feels alive</h4>
+            <button id="light-btn" onclick="btn()" onmouseover="change()" onmouseout="reset()"
+                style="background-color: #ffd54f;">Turn OFF</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

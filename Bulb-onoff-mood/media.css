@@ -1,0 +1,56 @@
+@media screen and (max-width:1240px) {
+
+    .dark-main,
+    .light-main {
+        height: auto;
+    }
+
+    .dark-mood,
+    .light-mood {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .dark-main,
+    .light-main {
+        height: auto;
+    }
+
+    .dark-mood,
+    .light-mood {
+        width: 70%;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .dark-main,
+    .light-main {
+        height: auto;
+    }
+
+    .dark-mood,
+    .light-mood {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+}
