@@ -1,0 +1,83 @@
+@media (max-width: 1200px) {
+    .child {
+        min-width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .child {
+        min-width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .child {
+        min-width: 80%;
+        padding: 15px 0px;
+    }
+
+    #task-input {
+        height: 45px;
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    #add-btn {
+        width: 100px;
+        height: 45px;
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #ul .task-item {
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .checkbox {
+        width: 30px;
+        height: 20px;
+    }
+
+    i {
+        font-size: 1.1rem;
+        right: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .child {
+        min-width: 95%;
+    }
+
+    #task-input {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    #add-btn {
+        width: 90px;
+        height: 40px;
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+    #ul .task-item {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .checkbox {
+        width: 25px;
+        height: 18px;
+    }
+
+    i {
+        font-size: 1rem;
+        right: 10px;
+    }
+}
