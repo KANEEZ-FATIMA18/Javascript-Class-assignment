@@ -22,11 +22,10 @@
 
 .child {
     min-width: 40%;
-    min-height: 400px;
+    min-height: 250px;
     height: auto;
     background-color: white;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     gap: 20px;
@@ -76,7 +75,6 @@ h1 {
     top: 0px;
     background: linear-gradient(90deg, hsla(252, 40%, 29%, 1) 0%, hsla(270, 77%, 71%, 1) 100%);
     color: white;
-    /* text white rakho taake contrast ho */
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -97,7 +95,6 @@ h1 {
 }
 
 #ul {
-    /* background-color: aqua; */
     width: 85%;
     display: flex;
     justify-content: center;
