@@ -141,3 +141,22 @@ i {
 i:hover {
     color: darkred;
 }
+
+
+
+.fa-pen-to-square {
+    color: #9e52ef;
+    position: absolute;
+    right: 50px;
+    font-size: 1.2rem;
+}
+
+.edit-input{
+    width: 70%;
+    height: 30px;
+    font-size: 1.1rem;
+    padding-left: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 2px solid #9e52ef;
+}
