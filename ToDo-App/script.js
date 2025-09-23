@@ -58,6 +58,7 @@ function AddTask() {
             var editInput = document.createElement("input");
             editInput.type = "text";
             editInput.className = "edit-input";
+            editInput.style.fontSize = "14px";
             editInput.value = span.textContent;
           
             li.replaceChild(editInput, span);

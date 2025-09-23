@@ -152,11 +152,12 @@ i:hover {
 }
 
 .edit-input{
-    width: 70%;
+    width: 60%;
     height: 30px;
-    font-size: 1.1rem;
+    
     padding-left: 10px;
     border-radius: 5px;
     padding: 10px 20px;
+    outline: none;
     border: 2px solid #9e52ef;
 }
