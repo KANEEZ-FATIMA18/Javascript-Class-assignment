@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/Chatbot/style.css">
+  <link rel="stylesheet" href="/Chatbot/signup/signup.css">
+  <link rel="stylesheet" href="/Chatbot/login/login.css">
+</head>
+
+<body>
+  <section class="main">
+    <div class="child">
+      <!-- Animation Side -->
+      <div class="login-1 signup-1">
+        <canvas id="canvas" class="canvas" width="900px" height="400px"></canvas>
+      </div>
+
+      <!-- Form Side -->
+      <div class="login-2 signup-2">
+        <h2>Login</h2>
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="off">
+          <p id="error" style="color:red; margin-top:10px;"></p>
+
+        </div>
+
+        <div class="input-box">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="new-password">
+          <p id="error" style="color:red; margin-top:10px;"></p>
+
+        </div>
+
+        <button type="submit" id="login-btn" onclick="login()">Login</button>
+        <p>Don’t have an account? <a href="/Chatbot/signup/signup.html">Signup</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lottie Animation Script -->
+  <script type="module">
+    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+    new DotLottie({
+      autoplay: true,
+      loop: true,
+      canvas: document.getElementById("canvas"),
+      src: "https://lottie.host/acd14c8f-6cc2-4e54-aac5-40f7a42ff954/mKzqRWxf42.json"
+    });
+  </script>
+
+  <script src="login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

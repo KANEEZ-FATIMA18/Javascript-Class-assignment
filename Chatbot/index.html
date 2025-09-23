@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Chat Assistant</title>
+  <link rel="stylesheet" href="/Chatbot/style.css" />
+</head>
+
+<body>
+  <section class="main">
+    <div class="child">
+      <div class="right-side">
+        <canvas id="canvas" class="canvas" width="460px" height="380px"></canvas>
+      </div>
+      <div class="left-side">
+        <h1>Your Gateway to Kaneez Fatima</h1>
+        <h2>Powered by her Personal Chat Assistant</h2>
+        <p>Discover more about Kaneez Fatima — her skills, projects, and journey. Ask your queries and get instant
+          answers!</p>
+        <div class="btns">
+          <a href="/Chatbot/signup/signup.html"><button id="signup-btn">Sign Up</button></a>
+          <a href="/Chatbot/login/login.html"><button id="login-btn">Login</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module">
+    import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
+
+    new DotLottie({
+      autoplay: true,
+      loop: true,
+      canvas: document.getElementById("canvas"),
+      src: "https://lottie.host/acd14c8f-6cc2-4e54-aac5-40f7a42ff954/mKzqRWxf42.json",
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
