@@ -8,25 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="chat.css">
 
 </head>
 
 <body>
     <section class="main">
-        <img src="https://themes.pixelstrap.net/mega_bot/assets/svg/logo-icon.svg" alt="Logo">
         <div class="child">
             <h1 id="user-fullname">Hello</h1>
             <ul id="chat-list"></ul>
            <div id="input-main">
                 <input type="text" id="input-text" placeholder="Ask about Kaneez fatima" onkeypress="send(event)">
-                <i class="fa-solid fa-paper-plane" ></i></div>
+                <i class="fa-solid fa-paper-plane" onclick="send(event)" ></i></div>
         </div>
     </section>
     <script src="chat.js"></script>
 </body>
 
 </html>
-
 

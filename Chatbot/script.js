@@ -1,8 +1,16 @@
-import { DotLottie } from '@lottiefiles/dotlottie-web';
+var tl = gsap.timeline();
 
-const dotLottie = new DotLottie({
-    autoplay: true,
-    loop: true,
-    canvas: document.querySelector('#dotlottie-canvas'),
-    src: "<https://lottie.host/YOUR_ANIMATION_ID.lottie>", // replace with your .lottie or .json file URL
+
+tl.from(".text", {
+    duration: 3,
+    delay: 1,
+    y: 50,
+    opacity: 0,
+    stagger: 0.3,
+    ease: "power2.out"
 });
+
+
+
+
+

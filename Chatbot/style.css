@@ -17,18 +17,18 @@
     justify-content: center;
     align-items: center;
     background: #0A0E19;
+    background-size: 200% 200%;
 }
 
 .child {
-    width: 100%;
+    width: 95%;
     height: 70vh;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     border-radius: 20px;
-    backdrop-filter: blur(0px);
-    padding: 0px;
     text-align: center;
+    margin: 0px auto;
 }
 
 h1 {
@@ -45,7 +45,7 @@ h2 {
     color: #75EDB3;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
     padding: 0px 0 15px 0;
     font-weight: 500;
@@ -56,11 +56,10 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     padding: 0px;
-    /* background-color: #21aa68; */
     height: 100%;
-    gap: 19px;
+    gap: 15px;
+
 }
 
 .right-side {
@@ -105,8 +104,9 @@ p {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 60px;
+    margin-top: 30px;
     align-items: center;
+
 }
 
 button {
@@ -146,26 +146,30 @@ button {
 }
 
 /* 🔥 Responsive part */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .child {
         flex-direction: column;
-        /* text upar, buttons neeche */
         height: auto;
         width: 100%;
     }
 
     .right-side {
-        display: none;
-        /* hide image/extra section */
+        display: none;/
     }
 
     .left-side {
         width: 100%;
         flex: none;
+        padding: 0px 7px;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.2rem;
         text-align: center;
     }
 
@@ -179,4 +183,14 @@ button {
         width: 100%;
         font-size: 0.9rem;
     }
+}
+
+#cursor {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #75EDB3;
+    border-radius: 50%;
+    position: fixed;
+
+
 }

@@ -16,7 +16,7 @@ function clearErrors() {
 }
 
 function signup() {
-    clearErrors(); 
+    clearErrors();
     let valid = true;
 
     if (fullname.value === "") {
@@ -50,5 +50,25 @@ function signup() {
         localStorage.setItem("email", email.value);
         localStorage.setItem("password", password.value);
         window.location.href = "/login/login.html";
+    }
+}
+
+var eyeIcon = document.querySelectorAll("i");
+
+function eyePass() {
+    if (password.type === "password" && confirmPassword.type === "password") {
+        password.type = "text";
+        confirmPassword.type = "text";
+        for (let i = 0; i < eyeIcon.length; i++) {
+            eyeIcon[i].classList.remove("fa-eye");
+            eyeIcon[i].classList.add("fa-eye-slash");
+        }
+    } else {
+        password.type = "password";
+        confirmPassword.type = "password";
+        for (let i = 0; i < eyeIcon.length; i++) {
+            eyeIcon[i].classList.remove("fa-eye-slash");
+            eyeIcon[i].classList.add("fa-eye");
+        }
     }
 }

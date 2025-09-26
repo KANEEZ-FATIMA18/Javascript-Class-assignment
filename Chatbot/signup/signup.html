@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../signup/signup.css">
 </head>
@@ -13,7 +16,7 @@
     <section class="main">
         <div class="child">
             <div class="signup-1">
-                <canvas id="canvas" class="canvas" width="500px" height="400px"></canvas>
+                <canvas id="canvas" class="canvas" width="400px" height="400px"></canvas>
             </div>
             <div class="signup-2">
                 <h2>Signup</h2>
@@ -34,6 +37,7 @@
                     <label for="password">Password</label><br>
                     <input type="password" id="password" name="password" autocomplete="off"
                         placeholder="At least 6 characters">
+                    <i class="fa-solid fa-eye" onclick="eyePass()"></i>
                     <small id="password-error" class="error"></small>
                 </div>
 
@@ -41,6 +45,7 @@
                     <label for="confirm_password">Confirm Password</label><br>
                     <input type="password" id="confirm_password" name="confirm_password"
                         placeholder="Re-enter your password" autocomplete="off">
+                    <i class="fa-solid fa-eye" onclick="eyePass()"></i>
                     <small id="confirm-error" class="error"></small>
                 </div>
 

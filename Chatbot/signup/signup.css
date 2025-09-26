@@ -1,156 +1,6 @@
-/* Signup Page CSS
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, hsla(252, 60%, 30%, 1) 10%, hsla(250, 59%, 10%, 1) 100%);
-  background: radial-gradient(circle at top, #1e1b4b, #0f0c29);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: white;
-}
 
-
-.child {
-  display: flex;
-  width: 800px;
-  max-width: 95%;
-  height: 650px;
-  border-radius: 15px;
-  flex-direction: row;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-}
-
-
-.signup-1 {
-  width: 50%;
-  background: rgba(15, 14, 40, 0.95);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 650px;
-  position: relative;
-  z-index: 0;
-}
-
-.signup-2 {
-  width: 55%;
-  background: rgba(15, 14, 40, 0.95);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  height: 650px;
-  position: relative;
-  z-index: 0;
-}
-
-h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  text-align: center;
-  text-shadow: 0 0 20px rgba(149, 106, 247, 0.9), 0 0 40px rgba(157, 117, 251, 0.8);
-  letter-spacing: 5px;
-}
-
-.input-box {
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  font-size: 1rem;
-  margin-bottom: 5px;
-  color: #cbd5e1;
-}
-
-input {
-  width: 100%;
-  height: 40px;
-  border-radius: 10px;
-  border: 2px solid #4f46e5;
-  background: rgba(255, 255, 255, 0.08);
-  color: white;
-  padding: 10px;
-  font-size: 1rem;
-  box-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
-  outline: none;
-}
-
-input:focus {
-  border-color: #8b5cf6;
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.7);
-}
-
-
-#signup-btn {
-  width: 90%;
-  height: 50px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: white;
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
-  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
-  transition: all 0.3s ease;
-  margin-bottom: 25px;
-}
-
-#signup-btn:hover {
-  box-shadow: 0 0 30px rgba(139, 92, 246, 1);
-  transform: scale(1.05);
-}
-
-.error {
-  color: red;
-  font-size: 0.9rem;
-}
-
-
-p {
-  margin-top: 15px;
-  color: #bbb;
-}
-
-p a {
-  color: #8b5cf6;
-  text-decoration: none;
-}
-p a:hover {
-  text-decoration: underline;
-}
-
-
-
-@media (max-width: 768px) {
-  .child {
-    flex-direction: column;
-    height: auto;
-  }
-  .signup-1 {
-    display: none;
-  }
-  .signup-2 {
-    width: 100%;
-    padding: 20px;
-  }
-}
-
- */
-
-
-
-
-
- /* Signup Page CSS */
 * {
-  box-sizing: border-box; /* overflow control */
+  box-sizing: border-box; 
 }
 
 body {
@@ -181,15 +31,16 @@ body {
   margin: 20px;
   background: #0A0E19;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
-  overflow: hidden; /* prevent horizontal scroll */
+  overflow: hidden; 
 }
+
+
 
 .signup-1 {
   width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #0f172a, #0a0e19);
   color: #75EDB3;
   font-size: 1.5rem;
   font-weight: bold;
@@ -227,8 +78,10 @@ h2 {
 label {
   display: block;
   font-size: 1rem;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   color: #e2e8f0;
+  text-align: left;
+  font-weight: 500;
 }
 
 input {
@@ -242,6 +95,7 @@ input {
   font-size: 1rem;
   box-shadow: 0 0 10px rgba(117, 237, 179, 0.2);
   outline: none;
+
 }
 
 input::placeholder {
@@ -297,6 +151,14 @@ p a:hover {
   text-decoration: underline;
 }
 
+i{
+  position: relative;
+  left: 45%;
+  bottom: 31px;
+  cursor: pointer;
+  color: #94a3b8;
+}
+
 /* Tablets */
 @media (max-width: 992px) {
   .signup-1 {
@@ -315,6 +177,7 @@ p a:hover {
     padding: 30px 20px;
   }
 }
+
 
 /* Mobiles */
 @media (max-width: 600px) {
