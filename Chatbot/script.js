@@ -2,7 +2,7 @@ var tl = gsap.timeline();
 
 
 tl.from(".text", {
-    duration: 3,
+    duration: 2,
     delay: 1,
     y: 50,
     opacity: 0,

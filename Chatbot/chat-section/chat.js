@@ -1,3 +1,12 @@
+var loader = document.querySelector(".loader");
+var childpage = document.querySelector(".child");
+
+setTimeout(function () {
+  loader.style.display = "none";  
+  childpage.style.display = "flex"; 
+}, 5000); 
+
+
 var userFullname = document.getElementById("user-fullname");
 
 var savedFullname = localStorage.getItem("fullname");
@@ -8,23 +17,20 @@ if (savedFullname == null || savedFullname == "") {
 
 }
 else {
-  userFullname.innerText = `👋 Hello ${savedFullname}`;
+  userFullname.innerText = `Hello ${savedFullname}`;
   userFullname.style.textTransform = "capitalize";
   userFullname.style.position = "sticky-top";
 }
 
-
 var ul = document.getElementById("chat-list");
+var i = document.querySelector("i")
 
 
-var input1 = [
-  "hi", "hello", "hey", "what’s up", "how are you", "yo", "hii", "hy",
-  "salam", "assalamualaikum", "asalam o alaikum","assalam u alaikum", "salam alaikum", "walaikum salam"
-];
-var reply1 = "Wa Alaikum Salam 🌸 Hey 👋 I’m doing great! I’m here to tell you about Kaneez. Want to know her story?";
+var input1 = ["hi", "hello", "hey", "hii", "hy", "yo", "what’s up", "how are you"];
+var reply1 = "Hey 👋 I’m doing great! I’m here to tell you about Kaneez. Want to know her story? (yes/no)";
 
 var input2 = [
-  "who are you","who", "tell me about yourself", "introduce yourself", "what’s your name",
+  "who are you", "who", "tell me about yourself", "introduce yourself", "what’s your name",
   "about you", "who is this", "ap kon hain", "ap kia karti ho"
 ];
 var reply2 = "I’m Kaneez’s chatbot assistant 🌸. She’s a 19 y/o web development student, passionate about learning and building projects.";
@@ -103,7 +109,7 @@ var input13 = [
   "favorite food", "fav food", "your favorite dish", "fav dish", "what do you like to eat",
   "what’s your food", "apko konsa khana pasand hai", "apka fav khana", "pasandeeda khana"
 ];
-var reply13 = "She’s a foodie 😋 and can never say no to pizza or burgers.";
+var reply13 = "She’s a foodie 😋 and can never say no to pizza or burgers & Pasta.";
 
 var input14 = [
   "do you like traveling", "traveling", "love travel", "do you travel", "like trips",
@@ -142,7 +148,7 @@ var input19 = [
   "contact", "email", "linkedin", "github", "reach you", "your contact", "socials",
   "apka email", "apka contact", "apke links", "apke social media"
 ];
-var reply19 = "You can reach her at [your email] 📩, GitHub: [your GitHub], LinkedIn: [your LinkedIn].";
+var reply19 = "You can reach her at [kaneez.fatimaattaria18@gmail.com] 📩, GitHub: [https://github.com/KANEEZ-FATIMA18], LinkedIn: [https://www.linkedin.com/in/kaneezfatima18/].";
 
 // 11. Closing
 var input20 = [
@@ -151,9 +157,25 @@ var input20 = [
 ];
 var reply20 = "Allah Hafiz 🤲👋 Thanks for stopping by! Have an amazing day 🌸.";
 
+var input21 = ["salam", "assalamualaikum", "asalam o alaikum", "assalam u alaikum", "salam alaikum"];
+var reply21 = "Wa Alaikum Salam 🤲🌸 How are you doing? Want to know about Kaneez? (yes/no)";
+
+var input22 = ["yes", "haan", "han", "ji haan", "of course", "bilkul"];
+var reply22 = "Awesome! 🌸 Kaneez is a 19 y/o Web Development student from Pakistan 🇵🇰. Do you want to know her skills? (yes/no)";
+
+var input23 = ["no", "nahi", "nope", "not now", "nah"];
+var reply23 = "Alright 🌸 No problem! You can ask me anything else.";
+
+
+// function 
+
 function send(e) {
-  if (e.key === "Enter") {
+
+  if (e && e.key === "Enter") {
     var userValue = e.target.value.toLowerCase();
+    if (userValue === "") {
+      return;
+    }
     ul.insertAdjacentHTML("beforeend", `<li class="user-li">${userValue}</li>`);
     e.target.value = "";
 
@@ -257,6 +279,21 @@ function send(e) {
         ul.insertAdjacentHTML("beforeend", `<li class="bot-li">${reply20}</li>`);
       }, 3000);
     }
+    else if (input21.includes(userValue)) {
+      setTimeout(function () {
+        ul.insertAdjacentHTML("beforeend", `<li class="bot-li">${reply21}</li>`);
+      }, 3000);
+    }
+    else if (input22.includes(userValue)) {
+      setTimeout(function () {
+        ul.insertAdjacentHTML("beforeend", `<li class="bot-li">${reply22}</li>`);
+      }, 3000);
+    }
+    else if (input23.includes(userValue)) {
+      setTimeout(function () {
+        ul.insertAdjacentHTML("beforeend", `<li class="bot-li">${reply23}</li>`);
+      }, 3000);
+    }
     else {
       setTimeout(function () {
         ul.insertAdjacentHTML("beforeend", `<li class="bot-li">I’m sorry, I didn’t understand that.</li>`);
@@ -264,3 +301,7 @@ function send(e) {
     }
   }
 }
+
+i.addEventListener("click", function () {
+  send()
+})

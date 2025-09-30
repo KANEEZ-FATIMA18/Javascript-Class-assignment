@@ -8,24 +8,26 @@ function login() {
 
   if (email.value === savedEmail && password.value === savedPassword) {
 
-    const Toast = Swal.mixin({
-      toast: true,
-      position: "top-end",
-      showConfirmButton: false,
-      timer: 3000,
-      timerProgressBar: true,
-      didOpen: (toast) => {
-        toast.onmouseenter = Swal.stopTimer;
-        toast.onmouseleave = Swal.resumeTimer;
-      }
-    });
-    Toast.fire({
-      icon: "success",
-      title: "Signed in successfully"
-    });
-    setTimeout(() => {
-      window.location.href = "../chat-section/chat.html";
-    }, 2000);
+const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.onmouseenter = Swal.stopTimer;
+    toast.onmouseleave = Swal.resumeTimer;
+  }
+});
+Toast.fire({
+  icon: "success",
+  title: "Signed in successfully"
+});
+ 
+     setTimeout(() => {
+    window.location.href = "../chat-section/chat.html";
+  }, 3000);
+
   }
   else {
     document.getElementById("error").innerHTML = "Invalid email or password";

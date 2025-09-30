@@ -15,12 +15,14 @@
 
 <body>
     <section class="main">
-        <div class="child">
+        <div class="loader"></div>
+        <div class="child" style="display: none;">
             <h1 id="user-fullname">Hello</h1>
             <ul id="chat-list"></ul>
            <div id="input-main">
                 <input type="text" id="input-text" placeholder="Ask about Kaneez fatima" onkeypress="send(event)">
-                <i class="fa-solid fa-paper-plane" onclick="send(event)" ></i></div>
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
         </div>
     </section>
     <script src="chat.js"></script>

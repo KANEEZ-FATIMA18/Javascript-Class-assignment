@@ -25,14 +25,29 @@ body {
 .child {
   display: flex;
   width: 60%;
-  min-height: 650px;
+  min-height: 680px;
   border-radius: 15px;
   flex-direction: row;
   margin: 20px;
   background: #0A0E19;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
   overflow: hidden; 
+  animation: fadeInUp 3s ease forwards;
+  opacity: 0;
+  
 }
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+    
 
 
 
@@ -141,6 +156,7 @@ p {
   color: #94a3b8;
   font-size: 1rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 p a {
