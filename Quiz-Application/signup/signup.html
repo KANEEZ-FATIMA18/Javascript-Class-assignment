@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="child">
+            <div id="left">
+                <h1>Sign up now</h1>
+                <p>Join Quizard and Play</p>
+            </div>
+            <form id="right">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="winner@email.com">
+                    <small id="email-error" class="error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="username">Your Username</label>
+                    <input type="text" id="username" name="username" placeholder="username123">
+                    <small id="fullname-error" class="error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Your Password</label>
+                    <input type="password" id="password" name="password" placeholder="**********">
+                    <small id="password-error" class="error"></small>
+                </div>
+                <p class="pra">___________________or_______________________</p>
+                <button id="google-btn">
+                    <img src="../images/google.svg" alt="Google Logo">
+                    Sign up with Google
+                </button>
+                <button id="signup-btn" onclick="submitForm(event)">Sign up</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <script src="signup.js"></script>
+</body>
+
+</html>
