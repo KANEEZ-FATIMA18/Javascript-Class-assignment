@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../signup/signup.css">
+</head>
+
+<body>
+  <section class="main">
+    <div class="child">
+      <div id="left">
+        <h1>Welcome Back!</h1>
+        <p>Login to Quizard and Continue Your Journey</p>
+      </div>
+
+      <form id="right">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="winner@email.com">
+          <small id="email-error" class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="**********">
+          <small id="password-error" class="error"></small>
+        </div>
+
+        <button id="signup-btn" onclick="loginUser(event)">Login</button>
+
+        <p>Don’t have an account? <a href="../signup/signup.html">Sign up here</a></p>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function loginUser(e) {
+      e.preventDefault();
+    var email = document.getElementById("email").value.trim();
+     var password = document.getElementById("password").value.trim();
+
+      var savedpassword=localStorage.getItem("password")
+    var savedemail =localStorage.getItem("email")
+
+      if (savedemail=== email &&savedpassword ===password) {
+        alert("Login successful ✅");
+        // Redirect after login
+        window.location.href = "../Categories/category.html";
+      } else {
+      
+      }
+
+   
+    }
+  </script>
+</body>
+
+</html>
