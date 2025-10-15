@@ -69,6 +69,6 @@ function submitForm(e) {
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
         localStorage.setItem("username", username);
-        location.href ="../categories/category.html"
+        location.href ="../Categories/category.html"
     }
 }
