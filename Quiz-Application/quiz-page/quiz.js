@@ -234,7 +234,7 @@ nextBtn.addEventListener("click", function () {
     imageAlt: "Trophy",
     confirmButtonText: "Play Again"
   }).then(function () {
-    location.href = "../categories/category.html"; 
+    location.href = "../Categories/category.html"; 
   });
 } else {
   Swal.fire({
@@ -246,7 +246,7 @@ nextBtn.addEventListener("click", function () {
     imageAlt: "LOSE",
     confirmButtonText: "Try Again"
   }).then(function () {
-    location.href = "../categories/category.html"; 
+    location.href = "../Categories/category.html"; 
   });
 }
 
