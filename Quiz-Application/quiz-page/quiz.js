@@ -2,6 +2,7 @@ var questionText = document.getElementById("questions");
 var optionButtons = document.querySelectorAll(".option-btn");
 var nextBtn = document.getElementById("next-btn");
 var questionInfo = document.querySelector(".question-info");
+var timer = document.querySelector("#timer");
 
 
 // All Quiz Questions – ES5 Compatible
@@ -173,9 +174,27 @@ else {
 var index = 0;
 var score = 0;
 var current;
-
+var timeLeft = 10*60;
 // Show Question
 function showQuestion() {
+  setInterval(() => {
+    let minutes =Math.floor(timeLeft/60)
+    let seconds =timeLeft%60
+    if (timeLeft > 0) {
+      timeLeft--
+      timer.textContent = `${minutes}:${seconds}`
+    } else {
+      clearInterval(countdown);
+      Swal.fire({
+        title: "⏰ Time’s up!",
+        text: "Your quiz time has ended!",
+        icon: "warning",
+      }).then(() => {
+        location.href = "../loose/loose.html";
+      })
+    }
+
+  }, 1000)
   current = selectedCategory[index];
   questionInfo.innerHTML = `Question ${index + 1} of ${selectedCategory.length}`;
   questionText.innerHTML = `${index + 1}. ${current.question}`;
@@ -222,33 +241,33 @@ nextBtn.addEventListener("click", function () {
     showQuestion();
   } else {
     localStorage.setItem("quizScore", score);
- 
+
 
     if (score >= 15) {
-  Swal.fire({
-    title: "Congrats!",
-    text: `You scored ${score} out of ${selectedCategory.length}!`,
-    imageUrl: "../images/trophy.png",
-    imageWidth: 200,
-    imageHeight: 200,
-    imageAlt: "Trophy",
-    confirmButtonText: "Play Again"
-  }).then(function () {
-    location.href = "../Categories/category.html"; 
-  });
-} else {
-  Swal.fire({
-    title: "YOU LOSE!",
-    text: `You scored ${score} out of ${selectedCategory.length}.`,
+      Swal.fire({
+        title: "Congrats!",
+        text: `You scored ${score} out of ${selectedCategory.length}!`,
+        imageUrl: "../images/trophy.png",
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: "Trophy",
+        confirmButtonText: "Play Again"
+      }).then(function () {
+        location.href = "../Categories/category.html";
+      });
+    } else {
+      Swal.fire({
+        title: "YOU LOSE!",
+        text: `You scored ${score} out of ${selectedCategory.length}.`,
         imageUrl: "../images/loose.png",
-    imageWidth: 200,
-    imageHeight: 200,
-    imageAlt: "LOSE",
-    confirmButtonText: "Try Again"
-  }).then(function () {
-    location.href = "../Categories/category.html"; 
-  });
-}
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: "LOSE",
+        confirmButtonText: "Try Again"
+      }).then(function () {
+        location.href = "../Categories/category.html";
+      });
+    }
 
   }
 });
