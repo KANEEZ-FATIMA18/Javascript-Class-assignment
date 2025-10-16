@@ -6,8 +6,6 @@ var questionInfo = document.querySelector(".question-info");
 var timer = document.querySelector("#timer");
 
 
-// All Quiz Questions – ES5 Compatible
-
 var HTML = [
   { question: `What does HTML stand for?`, options: ["Hyper Text Markup Language", "HighText Machine Language", "Hyperlinking Text Management Language", "None"], correct: 0 },
   { question: `Who is the father of HTML?`, options: ["Tim Berners-Lee", "Brendan Eich", "Dennis Ritchie", "James Gosling"], correct: 0 },
@@ -276,5 +274,5 @@ nextBtn.addEventListener("click", function () {
   }
 });
 
-// initial call
+
 showQuestion();
