@@ -32,31 +32,17 @@
 
         <button id="signup-btn" onclick="loginUser(event)">Login</button>
 
-        <p>Don’t have an account? <a href="../signup/signup.html">Sign up here</a></p>
+        <div class="bottom-text">
+          <p id="pragraph">Don’t have an account? <a href="../signup/signup.html">Sign up here</a></p>
+        </div>
       </form>
     </div>
   </section>
 
-  <script>
-    function loginUser(e) {
-      e.preventDefault();
-    var email = document.getElementById("email").value.trim();
-     var password = document.getElementById("password").value.trim();
 
-      var savedpassword=localStorage.getItem("password")
-    var savedemail =localStorage.getItem("email")
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-      if (savedemail=== email &&savedpassword ===password) {
-        alert("Login successful ✅");
-        // Redirect after login
-        window.location.href = "../Categories/category.html";
-      } else {
-      
-      }
-
-   
-    }
-  </script>
+<script src="login.js"></script>
 </body>
 
 </html>

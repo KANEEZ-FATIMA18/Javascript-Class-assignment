@@ -1,3 +1,4 @@
+
 var questionText = document.getElementById("questions");
 var optionButtons = document.querySelectorAll(".option-btn");
 var nextBtn = document.getElementById("next-btn");
@@ -174,7 +175,7 @@ else {
 var index = 0;
 var score = 0;
 var current;
-var timeLeft = 10*60;
+var timeLeft = 35*60;
 // Show Question
 function showQuestion() {
   setInterval(() => {
@@ -194,7 +195,7 @@ function showQuestion() {
       })
     }
 
-  }, 1000)
+  }, 2000)
   current = selectedCategory[index];
   questionInfo.innerHTML = `Question ${index + 1} of ${selectedCategory.length}`;
   questionText.innerHTML = `${index + 1}. ${current.question}`;
@@ -220,20 +221,23 @@ for (var i = 0; i < optionButtons.length; i++) {
     }
     this.classList.add("select");
 
+
     if (selectedText === correctAnswer && !this.classList.contains("answered")) {
       score++;
       this.classList.add("answered");
+     
+      
     }
     else {
       score += 0;
     }
-
     nextBtn.style.display = "block";
   });
-
-
 }
 
+
+
+  
 // Next Button
 nextBtn.addEventListener("click", function () {
   if (index < selectedCategory.length - 1) {
