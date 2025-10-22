@@ -127,6 +127,11 @@
         color: #1c1a5e;
         font-weight: bold;
     }
+.option-btn.select {
+  background-color: #0c0c7a;  /* soft lavender highlight */
+  border: 2px solid #55c4f7;
+  color: white;
+}
 
     @media (max-width: 768px) {
       h2 {

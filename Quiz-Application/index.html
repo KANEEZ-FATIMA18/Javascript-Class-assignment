@@ -2,28 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Application</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <section class="main">
-        <div class="child">
-            <div class="left">
-                <h1>Quizard</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, soluta quo.</p>
-               <button><a href="/signup/signup.html">Start Playing</a> </button>
-            </div>
-            <div class="right"> <img src="	https://assets.api.uizard.io/api/cdn/stream/fc8c3300-e90d-41be-8ab7-fbb85ec7ec78.png" alt=""  id="inner-img"></div>
-        </div>
-    </section>
-    <script src="script.js"></script>
+  <section class="main">
+    <div class="child">
+      <!-- Left Section -->
+      <div class="left" data-aos="fade-right">
+        <h1 data-aos="fade-down" data-aos-delay="200">Quizard</h1>
+        <p data-aos="fade-up" data-aos-delay="400">
+         Sharpen your coding skills with fun quizzes on HTML, CSS, JavaScript, React, and Python.
+        </p>
+        <button data-aos="zoom-in" data-aos-delay="600">
+          <a href="/signup/signup.html">Start Playing</a>
+        </button>
+      </div>
+
+      <!-- Right Section -->
+      <div class="right" data-aos="fade-left" data-aos-delay="400">
+        <img src="https://assets.api.uizard.io/api/cdn/stream/fc8c3300-e90d-41be-8ab7-fbb85ec7ec78.png" alt="" id="inner-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      once: true,
+    });
+  </script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
+
 

@@ -7,16 +7,20 @@
     <title>Signup</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="signup.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <section class="main">
         <div class="child">
-            <div id="left">
+            <div id="left" data-aos="fade-right">
                 <h1>Sign up now</h1>
                 <p>Join Quizard and Play</p>
             </div>
-            <form id="right">
+
+            <form id="right" data-aos="fade-left">
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="winner@email.com">
@@ -41,10 +45,18 @@
                     </p>
                 </div>
             </form>
-
         </div>
     </section>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+            once: true
+        });
+    </script>
 
     <script src="signup.js"></script>
 </body>
