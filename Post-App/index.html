@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <!-- <section class="main overflow-hidden">
+
+        <nav class="navbar child1">
+           
+                <h1>Postify</h1>
+        </nav>
+        <div class="container-fluid ">
+
+            <div class="d-flex align-items-start ">
+                <div class="child2 col-4 ">
+                    <div class="">
+                        <label for="name">
+                            Your Name
+                        </label>
+                        <input type="text" id="name" placeholder="Your Profile  ">
+                        <label for="name">
+                            Your Profile Pic
+                        </label>
+                        <input type="file" id="pic" placeholder="Enter your profile  ">
+                        <label for="name">
+                            Post Title
+                        </label>
+                        <input type="text" id="title" placeholder="Enter your Post Title  ">
+                        <label for="content"> Post Content</label>
+                        <textarea name="content" id="content" cols="15" rows="4" placeholder="..."></textarea>
+
+                        <div class="image-main">
+                            <img src="/images/1.jpg" alt="img" class="img" onclick="image()">
+                            <img src="/images/2.jpg" alt="img" class="img" onclick="image()">
+                            <img src="/images/3.jpg" alt="img" class="img" onclick="image()">
+                            <img src="/images/4.jpg" alt="img" class="img" onclick="image()">
+                            <img src="/images/5.jpg" alt="img" class="img" onclick="image()">
+                        </div>
+                        <button id="post-btn" onclick="submit(event) ">
+                            Create Post
+                        </button>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="post">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  -->
+    
+     <section class="main overflow-hidden">
+    <nav class="navbar child1">
+      <h1>Postify</h1>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center mt-3">
+        <div class="col-lg-4 col-md-8 col-sm-10 child2">
+          <label>Your Name</label>
+          <input type="text" id="name" placeholder="Your Profile">
+          <label>Your Profile Pic</label>
+          <input type="file" id="pic">
+          <label>Post Title</label>
+          <input type="text" id="title" placeholder="Enter your Post Title">
+          <label>Post Content</label>
+          <textarea id="content" cols="15" rows="4" placeholder="..."></textarea>
+
+          <div class="image-main">
+            <img src="/images/1.jpg" alt="img" class="img" onclick="image()">
+            <img src="/images/2.jpg" alt="img" class="img" onclick="image()">
+            <img src="/images/3.jpg" alt="img" class="img" onclick="image()">
+            <img src="/images/4.jpg" alt="img" class="img" onclick="image()">
+            <img src="/images/5.jpg" alt="img" class="img" onclick="image()">
+          </div>
+          <button id="post-btn" onclick="submit(event)">Create Post</button>
+        </div>
+
+        <div class="col-lg-8 col-md-10 col-sm-12">
+          <div class="post"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
